@@ -1,0 +1,7 @@
+<div class="line-item">
+  <%= image_tag(line_item.product.image_url, class: "img-thumbnail") %>
+  <h5><%= line_item.product.name %></h5>
+  <p><%= line_item.product.description %></p>
+  <p>Quantity: <%= line_item.quantity %></p>
+  <p>Total: <%= number_to_currency(line_item.total_price) %></p>
+</div>
